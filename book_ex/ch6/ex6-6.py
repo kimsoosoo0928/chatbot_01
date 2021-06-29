@@ -4,8 +4,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Flatten, Dense, LSTM
 
 # time step만큼 시퀀스 데이터 분리
-def split_sequence(sequence, step):
-    x, y = list(), list()
+def split_sequence(sequence, step):    x, y = list(), list()
 
     for i in range(len(sequence)):
         end_idx = i + step
